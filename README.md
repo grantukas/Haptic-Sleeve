@@ -1,2 +1,2 @@
 # Haptic-Sleeve
-Code for Haptic Sleeve Project
+Repository for the code used for the Haptic Sleeve Project!
