@@ -1,8 +1,16 @@
 # Haptic-Sleeve
 Repository for the code used for the Haptic Sleeve Project!
 
-## CaseModels
+Below is a breif description of the folders.
+
+### CaseModels
 Contains the 3D models that house the Haptic Sleeve PCB.
 
+### ESP32 Code
+Contains the Micropython code to run on the ESP32.
 
-Each part of the project is contained in their respective folders (ex. Micropython code for the ES32 is located in the 'ESP32 Code' folder).
+### Learn To Write Code
+Contains the code for the Learn To Write Software.
+
+### Schematic+Board
+Contains the schematic and board layout files for the Haptic Sleeve.
