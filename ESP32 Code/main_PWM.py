@@ -87,3 +87,5 @@ while True:
 
 	except OSError as e:
 		restart_and_reconnect()
+
+		
