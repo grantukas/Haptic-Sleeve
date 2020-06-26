@@ -14,4 +14,3 @@ from micropython import const
 ble = ubluetooth.BLE()
 ble.active(True)
 ble.config(gap_name='Haptic Sleeve')
-
