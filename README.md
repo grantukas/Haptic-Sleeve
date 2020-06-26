@@ -7,7 +7,7 @@ Below is a breif description of the folders.
 Contains the 3D models that house the Haptic Sleeve PCB.
 
 ### ESP32 Code
-Contains the Micropython code to run on the ESP32.
+Contains the Micropython code to run on the ESP32, along with Micropython firmware to flash (.bin file).
 
 ### Learn To Write Code
 Contains the code for the Learn To Write Software.
