@@ -125,3 +125,5 @@ class BLEUART:
 
     def _advertise(self, interval_us=500000):
         self._ble.gap_advertise(interval_us, adv_data=self._payload)
+
+        
