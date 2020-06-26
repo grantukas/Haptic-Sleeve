@@ -28,3 +28,4 @@ while station.isconnected() == False:
 print('Connection successful')
 print(station.ifconfig())
 
+
