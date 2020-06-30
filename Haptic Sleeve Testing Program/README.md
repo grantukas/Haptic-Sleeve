@@ -85,6 +85,8 @@ When a test starts, there will be a 3 second countdown before the first command 
 
 Once a test is completed, the program will return to the menu where a user can elect to run another test or quit the program.
 
+A log file will be updated during execution of the program and can be used for analysis after tests.
+
 ## Test cases
 The user can be given a few minutes to practice with the test cases to familiarize themselves with how the test cases are run.
 
