@@ -71,7 +71,7 @@ If you have trouble using pip, be sure that pip is enabled:
 ```
 py -3 -m ensurepip
 ```
-Additionally, this program CANNOT be run from IDLE. It must be run via command line, or your IDE set to emulate the terminal in the output console. Be sure you are in the directory containing the program. On Windows via cmd, this looks like:
+Additionally, this program **cannot** be run from IDLE. It must be run via command line, or your IDE set to emulate the terminal in the output console. Be sure you are in the directory containing the program. On Windows via cmd, this looks like:
 ```
 py -3 sleeve_test.py
 ```
