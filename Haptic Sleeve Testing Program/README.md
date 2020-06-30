@@ -8,7 +8,7 @@ The program uses Bleak to connect via BLE from a PC to the ESP32 on the Haptic S
 
 Because Bleak runs asynchronously, I opted to build the entire program to run asynchronously. I don't have much experience with asynchronous programming, so I found this to be a good exercise in learning asynchronous programming with Python.
 
-Here's some background on asynchronous programming in Python. Usually, a program will run sequentially, meaning only one thing can be executed at a time. Python's asyncio module introduces asynchronous programming, which allows different tasks to start execution without waiting for the previous one to be completed.
+Here's some background on asynchronous programming in Python. Usually, a program will run sequentially, meaning only one thing can be executed at a time. Python's ```asyncio``` module introduces asynchronous programming, which allows different tasks to start execution without waiting for the previous one to be completed.
 
 Using asyncio, a coroutine is constructed that can be used to send commands to the Haptic Sleeve. A coroutine is a specialized version of a Python generator function. Coroutines are declared very similarly to Python functions:
 ```
