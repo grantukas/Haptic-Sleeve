@@ -55,10 +55,10 @@ All input taken from the user and commands sent to the Haptic Sleeve are logged 
 
 ```logging``` is used to log output from the program.
 
-**Important**
+**Important:**
 ```msvcrt``` gives access to a number of functions in the Microsoft Visual C/C++ Runtime Library. This is useful because it contains a function which will allow the program to read a single keypresses from the console.
 ```msvcrt.getche()``` is used to read a keypress and return the resulting character, and echo the character to the console. getche() will not wait for ```Enter``` to be pressed, which is useful for many reasons. For our purposes, this is useul because it allows the user to focus on pressing the appropriate keys during a test and not have to worry about pressing ```Enter``` after each input. Intuitively, this can be seen to be helpful during the speed test. ```msvcrt.getche()``` is only used during the tests, to begin a test the user must confirm their desired selection with the ```Enter``` key.
-***Most importantly the user must select only alphabetical or numerical keys during a test. Special function keys will return ```\000```, then return the special key code. This is an issue because it means that it will return twice, which inadvertantly advances the test twice instead of once. Thus, it is easier to avoid this issue and use only alphabetical or numerical characters for input.***
+**Most importantly the user must select only alphabetical or numerical keys during a test. Special function keys will return ```\000```, then return the special key code. This is an issue because it means that it will return twice, which inadvertantly advances the test twice instead of once. Thus, it is easier to avoid this issue and use only alphabetical or numerical characters for input. Additionally, msvcrt *only works within a console window*, so the program cannot be run from IDLE.**
 
 ## Setup
 A few things are needed before running the program.
@@ -71,7 +71,7 @@ If you have trouble using pip, be sure that pip is enabled:
 ```
 py -3 -m ensurepip
 ```
-Additionally, this program **cannot** be run from IDLE. It must be run via command line, or your IDE set to emulate the terminal in the output console. Be sure you are in the directory containing the program. On Windows via cmd, this looks like:
+Additionally, this program **cannot** be run from IDLE (see *Notes on the modules used*, ```msvcrt``` module). It must be run via command line, or your IDE set to emulate the terminal in the output console. Be sure you are in the directory containing the program. On Windows via cmd, this looks like:
 ```
 py -3 sleeve_test.py
 ```
