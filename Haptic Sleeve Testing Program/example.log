@@ -1,0 +1,44 @@
+2020-06-30 11:02:13,847 - INFO - root - 
+
+
+2020-06-30 11:02:13,848 - INFO - root - PROGRAM BEGINS
+...
+2020-06-30 11:02:16,514 - DEBUG - bleak.backends.dotnet.discovery - Received 3C:71:BF:FF:5E:5A: Haptic Sleeve.
+...
+2020-06-30 11:02:17,871 - DEBUG - bleak.backends.dotnet.discovery - Received 84:EE:03:48:39:72: Unknown.
+2020-06-30 11:02:17,973 - DEBUG - bleak.backends.dotnet.discovery - Could not remove event handlers: unknown event handler...
+2020-06-30 11:02:17,974 - DEBUG - bleak.backends.dotnet.discovery - 10 devices found. Watcher status: 3.
+2020-06-30 11:02:17,983 - DEBUG - bleak.backends.dotnet.client - Connecting to BLE device @ 3C:71:BF:FF:5E:5A
+2020-06-30 11:02:18,075 - DEBUG - bleak.backends.dotnet.client - Get Services...
+2020-06-30 11:02:21,198 - DEBUG - bleak.backends.dotnet.client - Connection successful.
+2020-06-30 11:02:30,603 - DEBUG - root - Accuracy test started
+2020-06-30 11:02:33,820 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'3,2')
+2020-06-30 11:02:33,820 - DEBUG - root - Direction sent: b'3,2'
+2020-06-30 11:02:34,611 - DEBUG - root - Key pressed: b's'
+2020-06-30 11:02:34,701 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'1,2')
+2020-06-30 11:02:34,701 - DEBUG - root - Direction sent: b'1,2'
+2020-06-30 11:02:35,546 - DEBUG - root - Key pressed: b'w'
+2020-06-30 11:02:35,716 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'2,2')
+2020-06-30 11:02:35,717 - DEBUG - root - Direction sent: b'2,2'
+2020-06-30 11:02:36,537 - DEBUG - root - Key pressed: b'a'
+2020-06-30 11:02:36,669 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'4,2')
+2020-06-30 11:02:36,670 - DEBUG - root - Direction sent: b'4,2'
+2020-06-30 11:02:37,445 - DEBUG - root - Key pressed: b'd'
+2020-06-30 11:02:37,568 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'0,0')
+2020-06-30 11:02:37,569 - DEBUG - root - ALL OFF, Direction sent: b'0,0'
+2020-06-30 11:02:54,341 - DEBUG - root - Speed test started
+2020-06-30 11:02:57,540 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'4,2')
+2020-06-30 11:02:57,541 - DEBUG - root - Direction sent: b'4,2'
+2020-06-30 11:02:58,229 - DEBUG - root - Key pressed: b'd'
+2020-06-30 11:02:58,325 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'1,2')
+2020-06-30 11:02:58,326 - DEBUG - root - Direction sent: b'1,2'
+2020-06-30 11:02:58,883 - DEBUG - root - Key pressed: b'w'
+2020-06-30 11:02:59,002 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'3,2')
+2020-06-30 11:02:59,003 - DEBUG - root - Direction sent: b'3,2'
+2020-06-30 11:02:59,673 - DEBUG - root - Key pressed: b's'
+2020-06-30 11:02:59,787 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'2,2')
+2020-06-30 11:02:59,787 - DEBUG - root - Direction sent: b'2,2'
+2020-06-30 11:03:00,328 - DEBUG - root - Key pressed: b'a'
+2020-06-30 11:03:00,406 - DEBUG - bleak.backends.dotnet.client - Write Characteristic 6e400002-b5a3-f393-e0a9-e50e24dcca9e : bytearray(b'0,0')
+2020-06-30 11:03:00,406 - DEBUG - root - ALL OFF, Direction sent: b'0,0'
+2020-06-30 11:04:39,171 - DEBUG - bleak.backends.dotnet.client - Disconnecting from BLE device...
