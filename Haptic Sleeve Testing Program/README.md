@@ -46,7 +46,7 @@ user_direction = msvcrt.getche()
 logging.debug("Key pressed: " + str(user_direction))
 ```
 
-All input taken from the user and commands send to the Haptic Sleeve are logged to a log file. The log file contains timestamps that can be used in our calculations, as well as other helpful information, like which commands were sent. An example log file (example.log) is here to show what information is conatined within the a log file.
+All input taken from the user and commands sent to the Haptic Sleeve are logged to a log file. The log file contains timestamps that can be used in our calculations, as well as other helpful information, like which commands were sent. An example log file (example.log) is here to show what information is conatined within the a log file.
 
 ## Notes on the modules used
 ```asyncio``` is used to implement asynchronous programming.
