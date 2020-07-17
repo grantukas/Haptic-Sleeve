@@ -1,7 +1,7 @@
 # Haptic-Sleeve
 Repository for the code used for the Haptic Sleeve Project!
 
-Below is a breif description of the folders.
+Below is a brief description of the folders.
 
 ### CaseModels
 Contains the 3D models that house the Haptic Sleeve PCB.
