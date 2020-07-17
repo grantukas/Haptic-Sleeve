@@ -91,7 +91,8 @@ async def run_training(client):
     print("\nUser training started.")
     print("Select a vibrational intensity using 1, 2, or 3.")
     intensity = msvcrt.getche()
-    print("\n Now select motor directions to activate using W-A-S-D. Q to quit.")
+    print("\nNow select motor directions to activate using W-A-S-D.")
+    print("Press E to select a new intensity level. Q to exit training.")
 
     # Wait on input from user and send command for appropriate keypress
     while(True):
@@ -108,6 +109,11 @@ async def run_training(client):
         elif direction == b"d": # Right
             user_command = b"4," + intensity
             await client.write_gatt_char(UUID_NORDIC_TX, bytearray(user_command[0:20]), True)
+        elif direction == b"e": # Change intensity then continue training
+            await client.write_gatt_char(UUID_NORDIC_TX, bytearray(command[0:20]), True)
+            print("\nInput a new intensity level: ")
+            intensity = msvcrt.getche()
+            print()
         else: # All motors off and exit
             await client.write_gatt_char(UUID_NORDIC_TX, bytearray(command[0:20]), True)
             break
