@@ -93,14 +93,22 @@ The user can be given a few minutes to practice with the test cases to familiari
 ### Accuracy test
 The accuracy test is used to test if a user can accurately sense which motor is being activated. This test does not focus on the speed at which the user responds, but rather how accurately the user responds. The user should be instructed to use the W-A-S-D keys to input the direction, **not** the arrow keys (see *Notes on the modules used*, ```msvcrt``` module). W indicates forward, A indicates left, S indicates backwards, D indicates right.
 
-Commands are sent randomly once to each of the 4 motors (4 commands total sent). When all 4 motors have been activated once, the test concludes. The motor activation commands are sent with an intensity level of 2, which is the middle value of the possible intensities (1, 2, 3)
+A command will be sent randomly to one of the motors, with the next motor activated being any motor but the one that was previously activated. There will be a total of 52 motor activations. The motor activation commands are sent with an intensity level of 2, which is the middle value of the possible intensities (1, 2, 3)
 
 ### Speed test
 The speed test is used to test how quickly a user can react to a motor being activated. This test focuses on the speed at which the user responds and is not concerned with if the user can accurately decipher which direction was sent. For this test, the user should be instructed to pick any one alphabetical or numerical key to press (see *Notes on the modules used*, ```msvcrt``` module). It is advisable for the user to stick with this key until the test concludes. This is to simplify the test so that it is only reliant on how quickly the user can respond/press one key.
 
-Like the accuracy test, commands are randomly sent once to each of the 4 motors with an intensity level of 2 (4 commands total sent).
+Like the accuracy test, commands are randomly sent to each of the 4 motors with an intensity level of 2 , with 32 total commands sent.
+
+### Speed + accuracy test
+The speed + accuracy test is used to test how quickly *and* accurately a user can react to and sense a motor direction. This test will be used to gather data to see if the speed impacts how accurately a user can decipher motor directions.
+
+Motors will be actiavated in the same fashion as previous tests, with 52 total motor activations.
 
 ### Intensity test
-The intensity test is used to test if a user can decipher between the 3 intensity levels (1, 2, 3). The user should be intructed to select the numbers 1, 2, or 3 based on which intensity the user thinks is sent.
+The intensity test is used to test if a user can decipher between the 3 intensity levels (1, 2, 3). The user should be instructed to select the numbers 1, 2, or 3 based on which intensity the user thinks is sent.
 
-The intensity test is only sent to one motor, and each of the 3 vibrational intensities is sent once (3 commands total sent). Once all 3 intensities have been sent, the test concludes.
+The intensity test is sent individually to each of the 4 motors. Each motor will be activated 32 times with varying intensities. After all 4 motors have been activated, the test concludes.
+
+### User training
+Before performing the tests, the user will have ~5 minutes to train with the Haptic Sleeve. First, the user will select an intensity for the motors to operate at. If the user wants to change intensities, they can select the E key to pick a new intensity level. Then, the program will wait on the user to input a direction using the W-A-S-D keys. A command will be sent to the corresponding motor. This way, the user can manually activate each motor as many times as they want to familiarize themselves with the haptic feedback directions.
