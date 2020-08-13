@@ -19,6 +19,7 @@
 # Speed: User can pick any key to press, select ONLY numerical or alphabetical keys
 # Intensity: User can select 1, 2, 3 to pick intensity level
 
+import time
 import asyncio
 import random
 import logging
@@ -43,7 +44,9 @@ command_list_intensity4 = [b"4,1", b"4,2", b"4,3"]
 command = b"0,0"
 
 # Configure logging parameters
-logging.basicConfig(filename="results.log", filemode="a", format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
+log_date = time.strftime("%Y%m%d_%H%M%S", time.localtime())
+log_name = "results_" + log_date + ".log"
+logging.basicConfig(filename=log_name, filemode="a", format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
                     level=logging.DEBUG)
 logging.info("\n\n")
 logging.info("PROGRAM BEGINS")
@@ -84,6 +87,7 @@ async def run_test(client, loop, command_list, loop_iterations):
     motor_command = command
     await client.write_gatt_char(UUID_NORDIC_TX, bytearray(motor_command[0:20]), True)
     logging.debug("ALL OFF, Direction sent: " + str(motor_command))
+    logging.debug("Key pressed: b'0'")
     print("\nDone!")
 
 
