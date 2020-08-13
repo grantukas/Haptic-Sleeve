@@ -108,7 +108,7 @@ Motors will be actiavated in the same fashion as previous tests, with 52 total m
 ### Intensity test
 The intensity test is used to test if a user can decipher between the 3 intensity levels (1, 2, 3). The user should be instructed to select the numbers 1, 2, or 3 based on which intensity the user thinks is sent.
 
-The intensity test is sent individually to each of the 4 motors. Each motor will be activated 32 times with varying intensities. After all 4 motors have been activated, the test concludes.
+The intensity test is sent individually to each of the 4 motors. Each motor will be activated 24 times with varying intensities. After all 4 motors have been activated, the test concludes.
 
 ### User training
 Before performing the tests, the user will have ~5 minutes to train with the Haptic Sleeve. First, the user will select an intensity for the motors to operate at. If the user wants to change intensities, they can select the E key to pick a new intensity level. Then, the program will wait on the user to input a direction using the W-A-S-D keys. A command will be sent to the corresponding motor. This way, the user can manually activate each motor as many times as they want to familiarize themselves with the haptic feedback directions.
